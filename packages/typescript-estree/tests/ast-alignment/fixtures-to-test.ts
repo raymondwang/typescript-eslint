@@ -217,6 +217,12 @@ tester.addFixturePatternConfig('javascript/classes', {
     'class-accessor-properties',
     'class-static-methods-and-accessor-properties',
     'invalid-class-setter-declaration',
+    /**
+     * [BABEL ERRORED, BUT TS-ESTREE DID NOT]
+     * Private elements cannot have an accessibility modifier ('private')
+     * TODO: Add error code from typescript
+     */
+    'class-private-field-modifiers-error',
   ],
 });
 
@@ -441,6 +447,12 @@ tester.addFixturePatternConfig('typescript/basics', {
      * https://github.com/babel/babel/issues/12335
      */
     'object-with-typed-methods',
+    /**
+     * [BABEL ERRORED, BUT TS-ESTREE DID NOT]
+     * Private elements cannot have an accessibility modifier ('private')
+     * TODO: Add error code from typescript
+     */
+    'class-private-field-modifiers-error',
   ],
   ignoreSourceType: [
     /**
